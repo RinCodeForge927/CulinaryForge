@@ -3,43 +3,46 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Savory Whisper - Indulge in Global Flavors</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>Savory Whisper - Search Results | Premium Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
+    <meta content="restaurant, food search, menu, gourmet, global cuisine" name="keywords">
+    <meta content="Search dishes, ingredients, and products at Savory Whisper – find exactly what you crave." name="description">
+    <meta name="author" content="Savory Whisper Restaurant">
+    <meta name="theme-color" content="#FEA116">
 
     <!-- Favicon -->
     <link href="img/favicon-32x32.png" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+    <!-- Custom Styles -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-    
-    <!-- Header Start -->
-            <div class="container-xxl position-relative p-0">
+    <div class="container-xxl p-0">
+
+        <!-- Spinner -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
+        </div>
 
         <!-- Navbar -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 sticky-top">
-
-                <a href="index.html" class="navbar-brand p-0">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 wow animate__animated animate__fadeInDown">
+            <a href="index.html" class="navbar-brand p-0">
                 <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Savory Whisper</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -50,7 +53,7 @@
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="service.html" class="nav-link active">Service</a></li>
+                    <li class="nav-item"><a href="service.html" class="nav-link">Service</a></li>
                     <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
                     <li class="nav-item dropdown">
                         <a href="shop.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
@@ -65,7 +68,7 @@
                 <ul class="navbar-nav actions-nav">
                     <li class="nav-item d-none d-md-block">
                         <div class="navbar-search">
-                            <form class="d-flex">
+                            <form class="d-flex" action="search.html" method="get">
                                 <input class="form-control me-2" type="search" placeholder="Search">
                                 <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
                             </form>
@@ -76,62 +79,80 @@
                 </ul>
             </div>
         </nav>
-    </div>
-    <!-- Header End -->
-        
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Services</h5>
-                    <h1 class="mb-5">Explore Our Services</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                <h5>Master Chefs</h5>
-                                <p>Our chefs love sharing their passion for food—every plate is a celebration of flavor and creativity, perfect for family gatherings and special moments.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Quality Food</h5>
-                                <p>We use fresh, local ingredients to craft meals that are both delicious and nutritious, making every bite memorable for guests of all ages.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                                <h5>Online Order</h5>
-                                <p>Order online with just a few clicks—enjoy our menu at home or on the go, with easy pickup and delivery options for busy families.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                                <h5>24/7 Service</h5>
-                                <p>Our friendly team is here for you 24/7, ready to help with reservations, special requests, or last-minute plans—just reach out!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Duplicate service items removed - first block retained above -->
-                </div>
+        <!-- Navbar End -->
+
+        <!-- Hero Section -->
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-3 text-white mb-3">Search Results</h1>
+                <p class="text-white-50">Find your favorite dishes, categories, or products</p>
+                <form class="d-flex justify-content-center mt-4" action="search.html" method="get" style="max-width:600px; margin:auto;">
+                    <input type="text" class="form-control me-2" placeholder="Search for dishes or products...">
+                    <button class="btn btn-primary px-4" type="submit"><i class="fa fa-search me-2"></i>Search</button>
+                </form>
             </div>
         </div>
-        <!-- Service End -->
-        
+        <!-- Hero End -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <!-- Search Results -->
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="section-title ff-secondary text-primary fw-normal wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">Search Results</h5>
+                <h1 class="mb-4 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Showing Results for “Grilled”</h1>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/menu-1.jpg" class="card-img-top img-fluid" alt="Dish 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Grilled Salmon</h5>
+                            <p class="card-text">A deliciously tender grilled salmon served with herbs and lemon butter sauce.</p>
+                            <a href="product.html" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/menu-2.jpg" class="card-img-top img-fluid" alt="Dish 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Grilled Chicken Skewers</h5>
+                            <p class="card-text">Juicy chicken skewers marinated in savory spices, grilled to perfection.</p>
+                            <a href="product.html" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="img/menu-3.jpg" class="card-img-top img-fluid" alt="Dish 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Grilled Vegetable Platter</h5>
+                            <p class="card-text">A colorful mix of seasonal vegetables lightly grilled for smoky perfection.</p>
+                            <a href="product.html" class="btn btn-outline-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="d-flex justify-content-center mt-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                <nav>
+                    <ul class="pagination pagination-primary">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Search Results End -->
+
+        <!-- Footer -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
@@ -143,9 +164,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>District 1, Ho Chi Minh City, Vietnam</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+84 123 456 789</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@savorywhisper.com</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>District 1, Ho Chi Minh City, Vietnam</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+84 123 456 789</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@savorywhisper.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -170,31 +191,24 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container text-center">
                 <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Savory Whisper</a> All Rights Reserved.
-                        </div>
-                    </div>
+                    &copy; <a class="border-bottom" href="#">Savory Whisper</a> All Rights Reserved.
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
 
-    <!-- JavaScript Libraries -->
+    <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
 
 </body>
 </html>

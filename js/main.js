@@ -117,3 +117,21 @@
     
 })(jQuery);
 
+// Activate Bootstrap tab based on URL hash
+
+document.addEventListener("DOMContentLoaded", function() {
+    var hash = window.location.hash;
+    if(hash) {
+        var triggerEl = document.querySelector('a[href="' + hash + '"]');
+        if(triggerEl) {
+            var tab = new bootstrap.Tab(triggerEl);
+            tab.show();
+        }
+    }
+});
+
+// Change navbar style on scroll
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
