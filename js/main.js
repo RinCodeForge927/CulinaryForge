@@ -135,3 +135,42 @@ window.addEventListener("scroll", function() {
   const navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
+
+
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 20) {
+    navbar.classList.add("navbar-solid");
+  } else {
+    navbar.classList.remove("navbar-solid");
+  }
+});
+
+// Close responsive navbar when clicking outside
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarCollapse = document.getElementById("navbarCollapse");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+
+    // Khởi tạo Bootstrap Collapse instance
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+    // 1️⃣ Khi click vào link trong navbar → tự đóng menu
+    document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+            if (navbarCollapse.classList.contains("show")) {
+                bsCollapse.hide();
+            }
+        });
+    });
+
+    // 2️⃣ Khi click ra ngoài menu → tự đóng menu
+    document.addEventListener("click", (e) => {
+        const isClickInside =
+            navbarCollapse.contains(e.target) || navbarToggler.contains(e.target);
+
+        if (!isClickInside && navbarCollapse.classList.contains("show")) {
+            bsCollapse.hide();
+        }
+    });
+});

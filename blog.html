@@ -46,17 +46,19 @@
             </div>
           </li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+        <ul class="navbar-nav actions-nav align-items-center flex-column flex-md-row w-100 mt-3 mt-md-0">
 
-        <!-- 🔍 Search Box -->
-        <form class="search-box d-none d-md-block" action="search.html" method="get">
-          <input type="text" name="q" placeholder="Search...">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <!-- Search -->
+          <li class="nav-item w-100 mb-3 mb-md-0">
+            <form class="navbar-search position-relative w-100">
+              <input type="text" class="form-control search-bar" placeholder="Search dishes, blogs, or products...">
+              <button class="search-icon" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </li>
 
-        <ul class="navbar-nav actions-nav">
-          <li class="nav-item d-none d-md-block"><a href="login.html" class="nav-link">Login</a></li>
-          <li class="nav-item d-none d-md-block"><a href="register.html" class="nav-link">Register</a></li>
+    <!-- Login & Register -->
+          <li class="nav-item ms-md-3"><a href="login.html" class="nav-link text-primary fw-semibold">Login</a></li>
+          <li class="nav-item"><a href="register.html" class="nav-link text-primary fw-semibold">Register</a></li>
         </ul>
       </div>
     </nav>
@@ -217,6 +219,7 @@
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/navbar.js"></script>
 
 </body>
 </html>

@@ -1423,4 +1423,155 @@ img {
     }
 }
 
+.navbar-collapse {
+  background-color: #000 !important; /* nền đen cho menu khi mở trên mobile */
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FEA116 !important;
+}
+
+/* Khi cuộn xuống, làm navbar nổi bật hơn */
+.navbar.navbar-solid {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Navbar search box */
+.navbar-search .search-group {
+  width: 100%;
+  max-width: 260px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  background-color: #111;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 30px 0 0 30px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-btn {
+  border: 1px solid #FEA116;
+  background-color: transparent;
+  color: #FEA116;
+  border-radius: 0 30px 30px 0;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #FEA116;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .navbar-search .search-group {
+    max-width: 100%;
+  }
+
+  .search-input {
+    border-radius: 8px 0 0 8px;
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .actions-nav a.nav-link {
+    padding: 8px 0;
+  }
+}
+
+/* --- Sleek Search Bar --- */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-bar {
+  width: 100%;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px 45px 10px 20px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: #aaa;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #FEA116;
+  box-shadow: 0 0 8px rgba(254, 161, 22, 0.3);
+}
+
+/* Icon button inside input */
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: #FEA116;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-search {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    border-radius: 25px;
+    padding: 10px 40px 10px 16px;
+  }
+
+  .search-icon {
+    right: 10px;
+  }
+}
+
+
+
+
+
 
