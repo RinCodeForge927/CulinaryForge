@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": null,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "files.autoSave": "afterDelay"
+}
