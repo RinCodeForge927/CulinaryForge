@@ -1,14 +1,3 @@
-/********** Enhanced Responsive Template CSS **********/
-/* Optimized version: Further redundancy removal (e.g., consolidated repeated media queries for gutters, unified card hovers across blog/team/menu/category, removed duplicate ::before/::after in team-item, streamlined social icon transitions). 
-   Organized into logical sections with English comments for better readability, maintenance, and extensibility. 
-   All original functionality preserved. 
-   Update: Enhanced mobile dropdown for navbar (Shop section now properly expands on click with .show class; added focus support for better touch interaction). 
-   Full responsive overhaul: Consolidated media queries where possible (e.g., shared mobile hovers, gutters). Ensured fluid scaling, touch-friendly spacing, and no overflows on all devices (mobile <576px, tablet 576-991px, desktop >992px). 
-   Latest Update: Increased horizontal gutter (--bs-gutter-x to 7rem) for more padding between horizontal menu images (less cramped). Reduced vertical spacing (gutter-y to 2.5rem, margins to 2.5rem) for tighter top-bottom image rows. On mobile, centered footer social icons with flexbox (justify-content: center) to fix left alignment. No HTML changes needed. 
-   New Fix: Centered contact social media icons (Twitter, Facebook, YouTube, Instagram) on mobile by targeting the d-flex container in the contact section with justify-content: center and gap for even spacing. No HTML changes needed.
-   FIX ADDED: Equal height cards across all sections (team, service, menu, etc.) by forcing columns to flex and cards to 100% height. Removed calc() in team-item to prevent middle card shift-down. Hover uses transform only for smooth effect.
-   NEW FIX: Testimonial carousel - Removed scale(1.05) on center item to uniform size; added align-self: stretch for owl-items to prevent vertical shift. All cards now equal height/width without distortion. */
-
 /* ==========================================================================
    ROOT VARIABLES - Central theme colors, shadows, and reusable values
    ========================================================================== */
